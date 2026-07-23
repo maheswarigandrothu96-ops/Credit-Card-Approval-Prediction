@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Credit Card Fraud Detection</title>
+</head>
+<body>
+
+    <h1>Credit Card Fraud Detection</h1>
+
+    <form action="/predict" method="POST">
+
+        <input type="text" name="f0" placeholder="Time"><br><br>
+
+        <input type="text" name="f1" placeholder="V1"><br><br>
+
+        <input type="text" name="f2" placeholder="V2"><br><br>
+
+        <input type="submit" value="Predict">
+
+    </form>
+
+    <h2>{{ prediction_text }}</h2>
+
+</body>
+</html>
